@@ -1,0 +1,80 @@
+header {
+    font-family:  'Arial Narrow', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    background-color: #3f89dd;
+}
+
+#profile-img {
+    border-radius: 50%;
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+    margin: auto;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #4233c4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#certiport-cert {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+#fallacies-cert{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+#Cplus-cert{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+#achievements {
+    text-align: left;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+#projects {
+    text-align: left;
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+h2 {
+    font-family: 'Tahoma', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+body.dark {
+	background-color: #121212;
+	color: #f5f5f5;
+    header {
+        background-color: #090f61;
+    }
+}
