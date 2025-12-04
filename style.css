@@ -1,11 +1,16 @@
 .profile-container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     padding: 20px;
     margin: auto 20px;
     background-color: #d5d8eb;
+}
+
+#self-img, #name{
+    vertical-align: middle;
 }
 
 #name {
@@ -26,11 +31,11 @@
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    height: auto;
     object-fit: cover;
-    margin: auto;
+    margin: 0;
     border: 2px solid #00f; /* base border */
     box-shadow: 0 0 10px #00f; 
+    color: #000000;
 }
 
 button {
