@@ -1,12 +1,14 @@
 .profile-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 50px;
     padding: 20px;
-    margin: auto 20px;
-    background-color: #d5d8eb;
+    margin: 20px auto;
+    /*background-color: #d5d8eb;*/
+    max-width: 850px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #self-img, #name{
@@ -14,8 +16,8 @@
 }
 
 #name {
-    background-color: rgb(255, 46, 46);
-    background-image: linear-gradient(to top, #0019fc, #00a2ff);
+    background-color: rgb(8, 33, 255);
+    background-image: linear-gradient(to top, #2a00fc, #77c0fc);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -70,10 +72,40 @@ body::before {
     filter: blur(20px); 
     z-index: -1; 
 }
+/* About Me Styles */
+#about-me{
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 850px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+/* Main Content Styles */
 #main-content{
     padding: 20px;
     margin: auto 20px;
+}
+
+.title{
+    text-align: center;
+}
+
+/* Certifications Styles */
+#achievements-content{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 850px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 #cert-container{
@@ -105,12 +137,16 @@ body::before {
     margin-top: 10px auto;
 }
 
+/* Projects Styles */
 .projects-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px auto ;
+    max-width: 850px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
 }
 
 .projects-container ul{
@@ -120,24 +156,71 @@ body::before {
     list-style: none;
     padding: 0;
     margin: 0;
+    justify-content: center;
 }
 
 .projects-container li {
-    display: flex;          /* stack text and image neatly */
-    flex-direction: column-reverse; /* text above, image below */
-    align-items: center;    /* center content horizontally */
+    display: flex;          
+    flex-direction: column-reverse; 
+    align-items: center;   
 }
 
+.current-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 850px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.proj {
+    list-style-type: none;
+    border: 2px solid transparent;
+    padding: 8px 8px;
+    transition: border 0.3s ease;
+}
+
+.proj a {
+  text-decoration: none;       
+  color: #333;                 
+  border: 2px solid transparent; 
+  padding: 4px 8px;           
+  transition: border 0.3s ease, color 0.3s ease;
+}
+
+.proj a:hover {
+  border: 2px solid #e3fc00;   
+  border-radius: 4px;          
+  color: #d3b50e;             
+}
+
+
+
+/* Dark Mode Styles */
 body.dark {
-	background-color: #121212;
+    background-color: #121212;
 	color: #f5f5f5;
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-body.dark .profile-container{
+body.dark #about-me{
     background-color: #202020;
 }
 
+body.dark #achievements-content{
+    background-color: #202020;
+}
+
+body.dark .projects-container{
+    background-color: #202020;
+}
+
+body.dark .current-container{
+    background-color: #202020;
+}
 
 body.dark #name{
     background-image: linear-gradient(to top,#d3b50e, #e3fc00);
@@ -154,5 +237,5 @@ body.dark button {
 }
 
 body.dark::before {
-    background: url("images/darkBG.png") no-repeat center center;
+    background: url("images/darkBG.png") center center;
 }
